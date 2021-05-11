@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de select</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <select name="" id="miselect">
+        <option value="">Selecciona</option>
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+
+    <button id="miboton">Seleccion de select</button>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+
+        $('#miselect').val('3');
+
+        $('#miboton').click(function(){
+            alert($('#miselect').val());
+        });
+    });
+
+</script>

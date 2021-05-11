@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de select</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <label for="">mi valor</label>
+    <input type="checkbox" id="micheckbox">
+
+    
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+
+        $('#micheckbox').click(function(){
+           if($('#micheckbox').is(':checked')){
+                alert("esta check el control");
+           }else{
+                alert("no esta check tu control");
+           }
+        });
+    });
+
+</script>
